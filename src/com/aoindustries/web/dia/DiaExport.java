@@ -29,7 +29,8 @@ import java.io.File;
  */
 final public class DiaExport {
 
-	public static final String DIA_EXTENSION = ".dia";
+	public static final String EXTENSION = "dia";
+	public static final String DOT_EXTENSION = "." + EXTENSION;
 
 	private final File tmpFile;
 	private final int width;
