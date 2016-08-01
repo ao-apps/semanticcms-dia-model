@@ -26,6 +26,9 @@ import java.io.File;
 
 /**
  * Exports images from Dia and caches results for performance.
+ *
+ * TODO: Make Dia a new element type.
+ * TODO: Find way to register a view dynamically on stock docs screens?
  */
 final public class DiaExport {
 
