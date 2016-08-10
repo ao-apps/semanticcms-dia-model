@@ -12,3 +12,5 @@ For questions or support, please contact:
 The latest released version is always available:
     Binary-only: https://www.aoindustries.com/lib/semanticcms-dia-model.jar
     With Source: https://www.aoindustries.com/src/semanticcms-dia-model.src.jar
+
+Dia's hopmepage: https://wiki.gnome.org/Apps/Dia/
