@@ -109,9 +109,4 @@ public class Dia extends Element {
 	protected String getDefaultIdPrefix() {
 		return "dia";
 	}
-
-	@Override
-	public String getLinkCssClass() {
-		return "semanticcms-dia-dia-link";
-	}
 }
