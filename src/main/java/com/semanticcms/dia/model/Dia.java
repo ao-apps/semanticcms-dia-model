@@ -101,11 +101,6 @@ public class Dia extends Element {
 	}
 
 	@Override
-	public String getListItemCssClass() {
-		return "semanticcms-dia-list-item-dia";
-	}
-
-	@Override
 	protected String getDefaultIdPrefix() {
 		return "dia";
 	}
