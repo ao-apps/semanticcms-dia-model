@@ -38,6 +38,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 	<name>SemanticCMS Dia Model</name>
 	<url>https://semanticcms.com/dia/model/</url>
 	<description>Java API for embedding Dia-based diagrams in web pages.</description>
+	<inceptionYear>2013</inceptionYear>
 
 	<scm>
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-dia-model.git</connection>
