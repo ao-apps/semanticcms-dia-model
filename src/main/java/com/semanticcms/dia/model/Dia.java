@@ -49,55 +49,77 @@ public class Dia extends Element {
 	 */
 	@Override
 	public String getLabel() {
-		if(label != null) return label;
-		if(path != null) {
-			String filename = path.substring(path.lastIndexOf('/') + 1);
+		String p;
+		synchronized(lock) {
+			if(label != null) return label;
+			p = path;
+		}
+		if(p != null) {
+			String filename = p.substring(p.lastIndexOf('/') + 1);
 			if(filename.endsWith(DOT_EXTENSION)) filename = filename.substring(0, filename.length() - DOT_EXTENSION.length());
-			if(filename.isEmpty()) throw new IllegalArgumentException("Invalid filename for diagram: " + path);
+			if(filename.isEmpty()) throw new IllegalArgumentException("Invalid filename for diagram: " + p);
 			return filename;
 		}
 		throw new IllegalStateException("Cannot get label, neither label nor path set");
 	}
 
 	public void setLabel(String label) {
-		checkNotFrozen();
-		this.label = label==null || label.isEmpty() ? null : label;
+		synchronized(lock) {
+			checkNotFrozen();
+			this.label = label==null || label.isEmpty() ? null : label;
+		}
 	}
 
 	public String getBook() {
-		return book;
+		synchronized(lock) {
+			return book;
+		}
 	}
 
 	public void setBook(String book) {
-		checkNotFrozen();
-		this.book = book==null || book.isEmpty() ? null : book;
+		synchronized(lock) {
+			checkNotFrozen();
+			this.book = book==null || book.isEmpty() ? null : book;
+		}
 	}
 
 	public String getPath() {
-		return path;
+		synchronized(lock) {
+			return path;
+		}
 	}
 
 	public void setPath(String path) {
-		checkNotFrozen();
-		this.path = path==null || path.isEmpty() ? null : path;
+		synchronized(lock) {
+			checkNotFrozen();
+			this.path = path==null || path.isEmpty() ? null : path;
+		}
 	}
 
 	public int getWidth() {
-		return width;
+		synchronized(lock) {
+			return width;
+		}
 	}
 
 	public void setWidth(int width) {
-		checkNotFrozen();
-		this.width = width;
+		synchronized(lock) {
+			checkNotFrozen();
+			this.width = width;
+		}
 	}
 
 	public int getHeight() {
-		return height;
+		synchronized(lock) {
+			return height;
+		}
 	}
 
 	public void setHeight(int height) {
-		checkNotFrozen();
-		this.height = height;
+		synchronized(lock) {
+			checkNotFrozen();
+			this.height = height;
+		}
 	}
 
 	@Override
