@@ -22,11 +22,9 @@
  */
 package com.semanticcms.dia.model;
 
+import static com.aoindustries.util.StringUtility.nullIfEmpty;
 import com.semanticcms.core.model.Element;
 
-/**
- * TODO: Find way to register a view dynamically on stock docs screens?
- */
 public class Dia extends Element {
 
 	public static final String EXTENSION = "dia";
@@ -66,7 +64,7 @@ public class Dia extends Element {
 	public void setLabel(String label) {
 		synchronized(lock) {
 			checkNotFrozen();
-			this.label = label==null || label.isEmpty() ? null : label;
+			this.label = nullIfEmpty(label);
 		}
 	}
 
@@ -79,7 +77,7 @@ public class Dia extends Element {
 	public void setBook(String book) {
 		synchronized(lock) {
 			checkNotFrozen();
-			this.book = book==null || book.isEmpty() ? null : book;
+			this.book = nullIfEmpty(book);
 		}
 	}
 
@@ -92,7 +90,7 @@ public class Dia extends Element {
 	public void setPath(String path) {
 		synchronized(lock) {
 			checkNotFrozen();
-			this.path = path==null || path.isEmpty() ? null : path;
+			this.path = nullIfEmpty(path);
 		}
 	}
 
