@@ -30,28 +30,20 @@ public class Dia extends Element {
 	public static final String EXTENSION = "dia";
 	public static final String DOT_EXTENSION = "." + EXTENSION;
 
-	private String label;
-	private String book;
-	private String path;
-	private int width;
-	private int height;
-
-	@Override
-	public Dia freeze() {
-		super.freeze();
-		return this;
-	}
+	private volatile String label;
+	private volatile String book;
+	private volatile String path;
+	private volatile int width;
+	private volatile int height;
 
 	/**
 	 * If not set, defaults to the last path segment of path, with any ".dia" extension stripped.
 	 */
 	@Override
 	public String getLabel() {
-		String p;
-		synchronized(lock) {
-			if(label != null) return label;
-			p = path;
-		}
+		String l = label;
+		if(l != null) return l;
+		String p = path;
 		if(p != null) {
 			String filename = p.substring(p.lastIndexOf('/') + 1);
 			if(filename.endsWith(DOT_EXTENSION)) filename = filename.substring(0, filename.length() - DOT_EXTENSION.length());
@@ -62,62 +54,44 @@ public class Dia extends Element {
 	}
 
 	public void setLabel(String label) {
-		synchronized(lock) {
-			checkNotFrozen();
-			this.label = nullIfEmpty(label);
-		}
+		checkNotFrozen();
+		this.label = nullIfEmpty(label);
 	}
 
 	public String getBook() {
-		synchronized(lock) {
-			return book;
-		}
+		return book;
 	}
 
 	public void setBook(String book) {
-		synchronized(lock) {
-			checkNotFrozen();
-			this.book = nullIfEmpty(book);
-		}
+		checkNotFrozen();
+		this.book = nullIfEmpty(book);
 	}
 
 	public String getPath() {
-		synchronized(lock) {
-			return path;
-		}
+		return path;
 	}
 
 	public void setPath(String path) {
-		synchronized(lock) {
-			checkNotFrozen();
-			this.path = nullIfEmpty(path);
-		}
+		checkNotFrozen();
+		this.path = nullIfEmpty(path);
 	}
 
 	public int getWidth() {
-		synchronized(lock) {
-			return width;
-		}
+		return width;
 	}
 
 	public void setWidth(int width) {
-		synchronized(lock) {
-			checkNotFrozen();
-			this.width = width;
-		}
+		checkNotFrozen();
+		this.width = width;
 	}
 
 	public int getHeight() {
-		synchronized(lock) {
-			return height;
-		}
+		return height;
 	}
 
 	public void setHeight(int height) {
-		synchronized(lock) {
-			checkNotFrozen();
-			this.height = height;
-		}
+		checkNotFrozen();
+		this.height = height;
 	}
 
 	@Override
