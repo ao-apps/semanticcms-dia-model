@@ -36,13 +36,12 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 	<packaging>jar</packaging>
 
 	<properties>
-		<bookPath>/dia/model</bookPath>
 		<shortTitle>Model</shortTitle>
 		<description.html><![CDATA[Java API for embedding <a target="_top" href="https://wiki.gnome.org/Apps/Dia/">Dia-based diagrams</a> in web pages.]]></description.html>
 	</properties>
 
 	<name>SemanticCMS Dia Model</name>
-	<url>https://semanticcms.com${bookPath}/</url><!-- Can't inherit due to multi-module -->
+	<url>https://semanticcms.com/dia/model/</url>
 	<description>Java API for embedding Dia-based diagrams in web pages.</description>
 	<inceptionYear>2013</inceptionYear>
 
