@@ -1,6 +1,6 @@
 /*
  * semanticcms-dia-model - Java API for embedding Dia-based diagrams in web pages.
- * Copyright (C) 2013, 2014, 2015, 2016  AO Industries, Inc.
+ * Copyright (C) 2013, 2014, 2015, 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -31,6 +31,7 @@ public class Dia extends Element {
 	public static final String DOT_EXTENSION = "." + EXTENSION;
 
 	private volatile String label;
+	private volatile String domain;
 	private volatile String book;
 	private volatile String path;
 	private volatile int width;
@@ -56,6 +57,15 @@ public class Dia extends Element {
 	public void setLabel(String label) {
 		checkNotFrozen();
 		this.label = nullIfEmpty(label);
+	}
+
+	public String getDomain() {
+		return domain;
+	}
+
+	public void setDomain(String domain) {
+		checkNotFrozen();
+		this.domain = nullIfEmpty(domain);
 	}
 
 	public String getBook() {
