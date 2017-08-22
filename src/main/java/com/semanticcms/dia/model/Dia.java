@@ -22,6 +22,7 @@
  */
 package com.semanticcms.dia.model;
 
+import com.aoindustries.net.DomainName;
 import com.aoindustries.net.Path;
 import static com.aoindustries.util.StringUtility.nullIfEmpty;
 import com.semanticcms.core.model.Element;
@@ -32,7 +33,7 @@ public class Dia extends Element {
 	public static final String DOT_EXTENSION = "." + EXTENSION;
 
 	private volatile String label;
-	private volatile String domain;
+	private volatile DomainName domain;
 	private volatile Path book;
 	private volatile String path;
 	private volatile int width;
@@ -60,13 +61,13 @@ public class Dia extends Element {
 		this.label = nullIfEmpty(label);
 	}
 
-	public String getDomain() {
+	public DomainName getDomain() {
 		return domain;
 	}
 
-	public void setDomain(String domain) {
+	public void setDomain(DomainName domain) {
 		checkNotFrozen();
-		this.domain = nullIfEmpty(domain);
+		this.domain = domain;
 	}
 
 	public Path getBook() {
