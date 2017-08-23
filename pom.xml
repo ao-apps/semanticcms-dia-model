@@ -69,6 +69,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 							<configuration>
 								<links>
 									<link>${javac.link.javaApi}</link>
+									<link>https://aoindustries.com/ao-net-types/apidocs/</link>
 									<link>https://aoindustries.com/aocode-public/apidocs/</link>
 									<link>https://semanticcms.com/core/model/apidocs/</link>
 								</links>
@@ -81,6 +82,11 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 	</profiles>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.aoindustries</groupId>
+			<artifactId>ao-net-types</artifactId>
+			<version>1.1.0-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>com.aoindustries</groupId>
 			<artifactId>aocode-public</artifactId>
