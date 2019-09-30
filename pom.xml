@@ -29,7 +29,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>../../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model</artifactId><version>1.4.4-POST-SNAPSHOT</version>
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms-dia-model</artifactId><version>1.4.5-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -64,7 +64,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 							<links>
 								<link>${javac.link.javaApi}</link>
 								<!-- Direct -->
-								<link>https://aoindustries.com/aocode-public/apidocs/</link>
+								<link>https://aoindustries.com/ao-lang/apidocs/</link>
 								<link>https://semanticcms.com/core/model/apidocs/</link>
 							</links>
 						</configuration>
@@ -78,10 +78,10 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<dependencies>
 			<!-- Direct -->
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>aocode-public</artifactId><version>3.0.0-POST-SNAPSHOT</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-lang</artifactId><version>3.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.9.1-POST-SNAPSHOT</version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.10.0-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -89,7 +89,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 	<dependencies>
 		<!-- Direct -->
 		<dependency>
-			<groupId>com.aoindustries</groupId><artifactId>aocode-public</artifactId>
+			<groupId>com.aoindustries</groupId><artifactId>ao-lang</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
