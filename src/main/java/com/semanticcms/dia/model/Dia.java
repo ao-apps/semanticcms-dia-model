@@ -1,6 +1,6 @@
 /*
  * semanticcms-dia-model - Java API for embedding Dia-based diagrams in web pages.
- * Copyright (C) 2013, 2014, 2015, 2016, 2017  AO Industries, Inc.
+ * Copyright (C) 2013, 2014, 2015, 2016, 2017, 2020  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -24,7 +24,7 @@ package com.semanticcms.dia.model;
 
 import com.aoindustries.net.DomainName;
 import com.aoindustries.net.Path;
-import static com.aoindustries.util.StringUtility.nullIfEmpty;
+import static com.aoindustries.lang.Strings.nullIfEmpty;
 import com.semanticcms.core.model.Element;
 
 public class Dia extends Element {
