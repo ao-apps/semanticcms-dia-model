@@ -22,9 +22,9 @@
  */
 package com.semanticcms.dia.model;
 
+import static com.aoindustries.lang.Strings.nullIfEmpty;
 import com.aoindustries.net.DomainName;
 import com.aoindustries.net.Path;
-import static com.aoindustries.lang.Strings.nullIfEmpty;
 import com.semanticcms.core.model.Element;
 
 public class Dia extends Element {
