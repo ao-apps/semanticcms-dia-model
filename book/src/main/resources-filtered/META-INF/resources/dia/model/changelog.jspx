@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms-dia-model - Java API for embedding Dia-based diagrams in web pages.
-Copyright (C) 2016, 2017, 2019, 2020  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019, 2020, 2021  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -36,8 +36,8 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name} Changelog"
 		shortTitle="Changelog"
 		tocLevels="1"
-		datePublished="2016-10-30T21:41:15-0500"
-		dateModified="2020-03-28T23:26:40-05:00"
+		datePublished="2016-10-30T21:41:15-05:00"
+		dateModified="2021-05-22T13:07:02-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -49,7 +49,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>Added <core:link book="/core/model" page="/" /> domain support.</li>
-					<li>Minimum Java version changed from 1.7 to 1.8.</li>
+					<li>Updated dependencies.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
@@ -74,7 +74,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.4.5"
-			datePublished="2019-10-04T21:02:47-0500"
+			datePublished="2019-10-04T21:02:47-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
@@ -87,7 +87,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.4.4"
-			datePublished="2019-06-22T21:39:51-0500"
+			datePublished="2019-06-22T21:39:51-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
@@ -106,7 +106,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.4.3"
-			datePublished="2017-07-20T12:41:09-0500"
+			datePublished="2017-07-20T12:41:09-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
@@ -119,7 +119,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.4.2"
-			datePublished="2016-11-16T16:51:05-0600"
+			datePublished="2016-11-16T16:51:05-06:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
@@ -134,7 +134,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.4.1"
-			datePublished="2016-10-20T18:56:00-0500"
+			datePublished="2016-10-20T18:56:00-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
@@ -148,7 +148,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.4.0"
-			datePublished="2016-10-04T21:46:00-0500"
+			datePublished="2016-10-04T21:46:00-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
@@ -163,7 +163,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.3"
-			datePublished="2016-09-11T16:00:00-0500"
+			datePublished="2016-09-11T16:00:00-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
@@ -176,7 +176,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.2"
-			datePublished="2016-09-03T10:02:00-0500"
+			datePublished="2016-09-03T10:02:00-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
@@ -189,7 +189,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.1"
-			datePublished="2016-08-21T17:22:00-0500"
+			datePublished="2016-08-21T17:22:00-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
@@ -203,7 +203,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.0"
-			datePublished="2016-08-19T14:49:00-0500"
+			datePublished="2016-08-19T14:49:00-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
