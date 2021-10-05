@@ -40,7 +40,7 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 		<description.html><![CDATA[Java API for embedding <a target="${javadoc.target}" href="https://wiki.gnome.org/Apps/Dia/">Dia-based diagrams</a> in web pages.]]></description.html>
 		<!-- SonarQube -->
 		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
-		<sonar.organization>aoindustries</sonar.organization>
+		<sonar.organization>ao-apps</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<!-- TODO: Implement tests -->
 		<sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
@@ -75,20 +75,20 @@ along with semanticcms-dia-model.  If not, see <http://www.gnu.org/licenses />.
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/aoindustries/semanticcms-dia-model.git</connection>
-		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-dia-model.git</developerConnection>
-		<url>https://github.com/aoindustries/semanticcms-dia-model</url>
+		<connection>scm:git:git://github.com/ao-apps/semanticcms-dia-model.git</connection>
+		<developerConnection>scm:git:git@github.com:ao-apps/semanticcms-dia-model.git</developerConnection>
+		<url>https://github.com/ao-apps/semanticcms-dia-model</url>
 		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/aoindustries/semanticcms-dia-model/issues</url>
+		<url>https://github.com/ao-apps/semanticcms-dia-model/issues</url>
 	</issueManagement>
 
 	<ciManagement>
 		<system>GitHub Actions</system>
-		<url>https://github.com/aoindustries/semanticcms-dia-model/actions</url>
+		<url>https://github.com/ao-apps/semanticcms-dia-model/actions</url>
 	</ciManagement>
 
 	<repositories>
