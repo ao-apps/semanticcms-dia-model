@@ -28,75 +28,81 @@ import com.semanticcms.core.model.Element;
 
 public class Dia extends Element {
 
-	public static final String EXTENSION = "dia";
-	public static final String DOT_EXTENSION = "." + EXTENSION;
+  public static final String EXTENSION = "dia";
+  public static final String DOT_EXTENSION = "." + EXTENSION;
 
-	private volatile String label;
-	private volatile String book;
-	private volatile String path;
-	private volatile int width;
-	private volatile int height;
+  private volatile String label;
+  private volatile String book;
+  private volatile String path;
+  private volatile int width;
+  private volatile int height;
 
-	/**
-	 * If not set, defaults to the last path segment of path, with any ".dia" extension stripped.
-	 */
-	@Override
-	public String getLabel() {
-		String l = label;
-		if(l != null) return l;
-		String p = path;
-		if(p != null) {
-			String filename = p.substring(p.lastIndexOf('/') + 1);
-			if(filename.endsWith(DOT_EXTENSION)) filename = filename.substring(0, filename.length() - DOT_EXTENSION.length());
-			if(filename.isEmpty()) throw new IllegalArgumentException("Invalid filename for diagram: " + p);
-			return filename;
-		}
-		throw new IllegalStateException("Cannot get label, neither label nor path set");
-	}
+  /**
+   * If not set, defaults to the last path segment of path, with any ".dia" extension stripped.
+   */
+  @Override
+  public String getLabel() {
+    String l = label;
+    if (l != null) {
+      return l;
+    }
+    String p = path;
+    if (p != null) {
+      String filename = p.substring(p.lastIndexOf('/') + 1);
+      if (filename.endsWith(DOT_EXTENSION)) {
+        filename = filename.substring(0, filename.length() - DOT_EXTENSION.length());
+      }
+      if (filename.isEmpty()) {
+        throw new IllegalArgumentException("Invalid filename for diagram: " + p);
+      }
+      return filename;
+    }
+    throw new IllegalStateException("Cannot get label, neither label nor path set");
+  }
 
-	public void setLabel(String label) {
-		checkNotFrozen();
-		this.label = nullIfEmpty(label);
-	}
+  public void setLabel(String label) {
+    checkNotFrozen();
+    this.label = nullIfEmpty(label);
+  }
 
-	public String getBook() {
-		return book;
-	}
+  public String getBook() {
+    return book;
+  }
 
-	public void setBook(String book) {
-		checkNotFrozen();
-		this.book = nullIfEmpty(book);
-	}
+  public void setBook(String book) {
+    checkNotFrozen();
+    this.book = nullIfEmpty(book);
+  }
 
-	public String getPath() {
-		return path;
-	}
+  public String getPath() {
+    return path;
+  }
 
-	public void setPath(String path) {
-		checkNotFrozen();
-		this.path = nullIfEmpty(path);
-	}
+  public void setPath(String path) {
+    checkNotFrozen();
+    this.path = nullIfEmpty(path);
+  }
 
-	public int getWidth() {
-		return width;
-	}
+  public int getWidth() {
+    return width;
+  }
 
-	public void setWidth(int width) {
-		checkNotFrozen();
-		this.width = width;
-	}
+  public void setWidth(int width) {
+    checkNotFrozen();
+    this.width = width;
+  }
 
-	public int getHeight() {
-		return height;
-	}
+  public int getHeight() {
+    return height;
+  }
 
-	public void setHeight(int height) {
-		checkNotFrozen();
-		this.height = height;
-	}
+  public void setHeight(int height) {
+    checkNotFrozen();
+    this.height = height;
+  }
 
-	@Override
-	protected String getDefaultIdPrefix() {
-		return "dia";
-	}
+  @Override
+  protected String getDefaultIdPrefix() {
+    return "dia";
+  }
 }
