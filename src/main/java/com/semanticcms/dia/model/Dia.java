@@ -24,10 +24,14 @@
 package com.semanticcms.dia.model;
 
 import static com.aoapps.lang.Strings.nullIfEmpty;
+
 import com.aoapps.net.DomainName;
 import com.aoapps.net.Path;
 import com.semanticcms.core.model.Element;
 
+/**
+ * A Dia-based diagrams in web pages.
+ */
 public class Dia extends Element {
 
   public static final String EXTENSION = "dia";
