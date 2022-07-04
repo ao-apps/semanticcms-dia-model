@@ -36,15 +36,15 @@ along with semanticcms-dia-model.  If not, see <https://www.gnu.org/licenses/>.
     <module.name>com.semanticcms.dia.model.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>semanticcms-dia-model</documented.artifactId>
-    <documented.name>SemanticCMS Dia Model²</documented.name>
+    <documented.name>SemanticCMS Dia Model</documented.name>
     <documented.description>Java API for embedding Dia-based diagrams in web pages.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>SemanticCMS Dia Model² Book</name>
+  <name>SemanticCMS Dia Model Book</name>
   <url>https://semanticcms.com/dia/model/</url>
-  <description>Documentation for SemanticCMS Dia Model² in SemanticCMS format.</description>
+  <description>Documentation for SemanticCMS Dia Model in SemanticCMS format.</description>
   <inceptionYear>2013</inceptionYear>
 
   <licenses>

@@ -46,7 +46,7 @@ along with semanticcms-dia-model.  If not, see <https://www.gnu.org/licenses/>.
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
   </properties>
 
-  <name>SemanticCMS Dia Model²</name>
+  <name>SemanticCMS Dia Model</name>
   <url>https://semanticcms.com/dia/model/</url>
   <description>Java API for embedding Dia-based diagrams in web pages.</description>
   <inceptionYear>2013</inceptionYear>
