@@ -41,6 +41,9 @@ along with semanticcms-dia-model.  If not, see <https://www.gnu.org/licenses/>.
     <documented.artifactId>semanticcms-dia-model</documented.artifactId>
     <documented.name>SemanticCMS Dia Model</documented.name>
     <documented.description>Java API for embedding Dia-based diagrams in web pages.</documented.description>
+    <javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a>
+/ <a target="${javadoc.target}" href="https://semanticcms.com/dia/">Dia</a>
+/ <a target="${javadoc.target}" href="${project.url}">Model</a>]]></javadoc.breadcrumbs>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
