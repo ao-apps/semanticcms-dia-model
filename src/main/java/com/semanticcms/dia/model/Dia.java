@@ -1,6 +1,6 @@
 /*
  * semanticcms-dia-model - Java API for embedding Dia-based diagrams in web pages.
- * Copyright (C) 2013, 2014, 2015, 2016, 2017, 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2013, 2014, 2015, 2016, 2017, 2020, 2021, 2022, 2024  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -67,6 +67,9 @@ public class Dia extends Element {
     throw new IllegalStateException("Cannot get label, neither label nor path set");
   }
 
+  /**
+   * Sets the label while making sure not frozen.
+   */
   public void setLabel(String label) {
     checkNotFrozen();
     this.label = nullIfEmpty(label);
@@ -76,6 +79,9 @@ public class Dia extends Element {
     return domain;
   }
 
+  /**
+   * Sets the domain while making sure not frozen.
+   */
   public void setDomain(DomainName domain) {
     checkNotFrozen();
     this.domain = domain;
@@ -85,6 +91,9 @@ public class Dia extends Element {
     return book;
   }
 
+  /**
+   * Sets the book while making sure not frozen.
+   */
   public void setBook(Path book) {
     checkNotFrozen();
     this.book = book;
@@ -94,6 +103,9 @@ public class Dia extends Element {
     return path;
   }
 
+  /**
+   * Sets the path while making sure not frozen.
+   */
   public void setPath(String path) {
     checkNotFrozen();
     this.path = nullIfEmpty(path);
@@ -103,6 +115,9 @@ public class Dia extends Element {
     return width;
   }
 
+  /**
+   * Sets the width while making sure not frozen.
+   */
   public void setWidth(int width) {
     checkNotFrozen();
     this.width = width;
@@ -112,6 +127,9 @@ public class Dia extends Element {
     return height;
   }
 
+  /**
+   * Sets the height while making sure not frozen.
+   */
   public void setHeight(int height) {
     checkNotFrozen();
     this.height = height;
